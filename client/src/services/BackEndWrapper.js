@@ -2,45 +2,33 @@
 import MockBackEnd from './MockBackEnd.js';
 import GASBackEnd from './GASBackEnd.js';
 
-class BackEndWrapper
-{
-	constructor()
-	{
-		if (typeof google !== 'undefined')
-		{
+class BackEndWrapper {
+	constructor() {
+		if (typeof google !== 'undefined') {
 			this.real = new GASBackEnd();
-		}
-		else
-		{
+		} else {
 			this.real = new MockBackEnd();
 		}
 	}
 
-	loadRequests()
-	{
+	loadRequests() {
 		return this.real.loadRequests();
 	}
-	requestDetails(id)
-	{
+	requestDetails(id) {
 		return this.real.requestDetails(id);
 	}
-	approveRequest(id)
-	{
+	approveRequest(id) {
 		return this.real.approveRequest(id);
 	}
-	rejectRequest(id)
-	{
+	rejectRequest(id) {
 		return this.real.rejectRequest(id);
 	}
-	newRequest(req)
-	{
+	newRequest(req) {
 		return this.real.newRequest(req);
 	}
-	approvedRequests()
-	{
+	approvedRequests() {
 		return this.real.approvedRequests();
 	}
-};
+}
 
 export default BackEndWrapper;
-
