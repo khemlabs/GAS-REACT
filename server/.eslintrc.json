@@ -1,0 +1,20 @@
+{
+	"parser": "babel-eslint",
+	"plugins": ["prettier"],
+	"extends": ["eslint:recommended", "google"],
+	"rules": {
+		"no-unused-vars": "off",
+		"no-console": "off",
+		"require-jsdoc": 0,
+		"indent": "off",
+		"no-tabs": "off"
+	},
+	"globals": {
+		"HtmlService": true,
+		"AppLib": true
+	},
+	"env": {
+		"browser": true,
+		"node": true
+	}
+}
