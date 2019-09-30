@@ -1,0 +1,20 @@
+{
+	"parser": "babel-eslint",
+	"plugins": ["prettier", "googleappsscript"],
+	"extends": ["eslint:recommended", "google"],
+	"rules": {
+		"no-unused-vars": "off",
+		"no-console": "off",
+		"require-jsdoc": 0,
+		"indent": "off",
+		"no-tabs": "off",
+		"max-len": 0,
+		"comma-dangle": "off"
+	},
+	"globals": {},
+	"env": {
+		"browser": false,
+		"node": false,
+		"googleappsscript/googleappsscript": true
+	}
+}

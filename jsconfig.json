@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "es2017",
+		"allowSyntheticDefaultImports": false,
+		"baseUrl": "./",
+		"paths": {
+			"src/*": ["client/src/*"],
+			"components/*": ["client/src/components/*"],
+			"screens/*": ["client/src/screens/*"],
+			"scss/*": ["client/src/scss/*"],
+			"services/*": ["client/src/services/*"]
+		}
+	},
+	"exclude": ["node_modules"]
+}
